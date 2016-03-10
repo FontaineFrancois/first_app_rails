@@ -1,0 +1,20 @@
+
+
+<h1>Listing Slides</h1>
+
+
+<div class="slides">
+  <% @slides.each do |slide| %>
+    <div class="slide">
+      <p>
+        <%= slide.desc %>
+      </p>
+      <p>
+        <%= slide.author %>
+      </p>
+      <p>
+        <%= image_tag slide.picture.url(:original) %>
+      </p>
+    </div>
+  <% end %>
+</div>

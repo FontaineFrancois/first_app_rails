@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag @slide.picture.url(:medium)%>
+<p>
+  <strong>Name:</strong>
+  <%= @slide.name %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @slide.desc %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @slide.author %>
+</p>
+
+<%= link_to 'Edit', edit_admin_slide_path(@slide) %> |
+<%= link_to 'Back', admin_slide_path %>
